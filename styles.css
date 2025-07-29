@@ -40,7 +40,10 @@ header video {
     border: 2px solid #2f75d1;
 }
 
-.
+.black {
+    background-color: #1c1c1c;
+    color: #;
+}
 
 .fade-in {
     opacity: 0;
