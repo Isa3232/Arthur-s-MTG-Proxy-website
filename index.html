@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title>Wizards Who? - Custom MTG Proxies</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <video autoplay muted loop> 
@@ -15,46 +17,67 @@
         <h1>Proxy Goblin</h1>
         <p>Custom MTG Proxies for all your MTG needs</p>
     </header>
+
     <main>
         <section class="pricing-grid fade-in">
 
-            <div class="price-box fade-in.">
+            <div class="price-box white fade-in.">
                 <h2>1 - 10 Cards</h2>
                 <p>Small orders, great for casual play.</p>
                 <button>Order Here</button>
             </div>
 
-            <div class="price-box fade-in">
+            <div class="price-box blue fade-in">
                 <h2>11 - 50 Cards</h2>
                 <p>Mid-range orders with bulk discounts. Great for Smaller sized decks ot cubes.</p>
                 <button>Order Here</button>
             </div>
             
-            <div class="price-box fade-in">
+            <div class="price-box black fade-in">
                 <h2>51 - 200 Cards</h2>
                 <p>Perfect for Commander decks.</p>
                 <button>Order here</button>
             </div>
 
-            <div class="pricing-box fade-in">
+            <div class="price-box red fade-in">
                 <h2>200+ Cards</h2>
                 <p>Bulk orders with Bulk discounts</p>
                 <button>Order Here</button>
             </div>
 
-            <div class="place-box fade-in">
+            <div class="place-box green fade-in">
                 <h2>Booster packs</h2>
                 <p>Set and Collectors packs. Mystery packs with foils, alt-art, and special themes</p>
                 <button>Open a Pack</button>
             </div>
 
-            <div class="price-box fade-in">
+            <div class="price-box artifact fade-in">
                 <h2>Custom Art Cards</h2>
                 <p>Uplaod your art or request anime/meme styles. Personalize your deck!</p>
                 <button>Customize Now</button>
             </div>
         </section>
+
     </main>
+
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOnScroll = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
 </body>
 </html>
 
