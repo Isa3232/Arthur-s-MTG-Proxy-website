@@ -103,7 +103,7 @@ header video {
 
 .white {
     --card-accent: #f8f8f8;
-    color: #111;
+    color: #fff;
 }
 
 .blue {
@@ -128,7 +128,7 @@ header video {
 
 .artifact {
     --card-accent: #bdc3c7;
-    color: #2c3e50;
+    color: #fff;
 }
 
 
