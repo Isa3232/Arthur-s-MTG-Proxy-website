@@ -42,8 +42,29 @@ header video {
 
 .black {
     background-color: #1c1c1c;
-    color: #;
+    color: #fff;
+    border: 2px solid #333;
 }
+
+.red {
+    background-color: #e74c3c;
+    color: #fff;
+    border: 2px solid #c0392b;
+}
+
+.green {
+    background-color: #2ecc71;
+    color: #fff;
+    border: 2px solid #27ae60;
+}
+
+.artifact {
+    background-color: #bdc3c7;
+    color: #2c3e50;
+    border: 2px solid #95a5a6;
+}
+
+
 
 .fade-in {
     opacity: 0;
