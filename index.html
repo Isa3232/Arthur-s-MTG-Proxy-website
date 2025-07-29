@@ -146,6 +146,29 @@
         });
     </script>
 
+    <script>
+        const cards = document.querySelectorAll('.price-box');
+        
+        cards,forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const rotate = -(y - centerY) / 15;
+                const rotateY = (x - centerX) / 15;
+
+                card.style.transform = `rotateX(${rotate}deg) rotateY(${rotateY}deg)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'rotateX(0deg) rotateY(0deg)';
+            });
+        });
+    </script>
+
 </body>
 </html>
-
