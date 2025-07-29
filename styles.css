@@ -77,7 +77,7 @@ header video {
 
 .inner-border {
     background-color: var(--card-accent, #999);
-    border: 6px solid black; /* thick black frame */
+    border: 6px #21211C; /* thick black frame */
     border-radius: 12px;
     height: 100%;
     display: flex;
