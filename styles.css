@@ -63,17 +63,6 @@ header video {
     margin: auto;
 }
 
-@media (max-width: 900px) {
-    .pricing-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .pricing-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 .price-box{
     background-color: #1e1e1e;
@@ -142,4 +131,16 @@ header video {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
 }
