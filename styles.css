@@ -64,18 +64,20 @@ header video {
 }
 
 
-.price-box{
-    background-color: #1e1e1e;
-    border-radius: 16px;
-    overflow: visable;
-    padding: 0;
+.price-box {
+    background-color: black; /* outer MTG card frame */
+    border-radius: 1rem;
+    padding: 6px; /* space between outer and inner */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     position: relative;
-    height: 500px;
-    transition: transform 0.3s ease; box-shadow 0.3s ease; 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    aspect-ratio: 2 / 3; 
 }
 
 .inner-border {
-    border: 2px solid var(--card-accent, #999);
+    background-color: var(--card-accent, #999);
+    border: 6px solid black; /* thick black frame */
     border-radius: 12px;
     padding: 1rem;
     height: 100%;
@@ -88,6 +90,7 @@ header video {
     text-align: center;
     position: relative;
     z-index: 2;
+    margin-bottom: 1rem;
 }
 
 .card-image img {
