@@ -95,11 +95,11 @@ header video {
 .card-image img {
     width: 200px;
     height: auto;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 
 .price-box:hover .card-image img {
-    transform: translateY(-30px) scale(1.1);
+    transform: translateY(-30px) scale(1.5);
     z-index: 3;
 }
 
