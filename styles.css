@@ -28,6 +28,32 @@ header video {
     opacity: 0.4;
 }
 
+.about-section {
+    text-align: center;
+    margin: 4rem;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1 rem;
+}
+
+.pricing-grid-section {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.pricing-grid-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5 rem;
+}
+
+.pricing-grid-section p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
