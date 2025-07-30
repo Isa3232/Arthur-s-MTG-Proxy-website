@@ -66,7 +66,7 @@ header video {
 
 .price-box {
     background-color: #21211C; /* outer MTG card frame */
-    border-radius: 1rem;
+    border-radius: 2rem;
     padding: 6px; /* space between outer and inner */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     position: relative;
