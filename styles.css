@@ -73,6 +73,7 @@ header video {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     aspect-ratio: 2 / 3; 
+    overflow: visible;
 }
 
 .inner-border {
@@ -83,6 +84,7 @@ header video {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .card-image {
@@ -160,10 +162,6 @@ header video {
     cursor: pointer;
     margin-top: 1rem;
     transition: background-color 0.3s ease;
-    aspect-ratio: 2 / 3;
-    transform-style: preserve-3d;
-    perspective: 10000px;
-    will-change: transform;
 }
 
 .price-box button:hover {
