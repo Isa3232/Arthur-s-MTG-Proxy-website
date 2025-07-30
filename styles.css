@@ -68,10 +68,11 @@ header video {
     background-color: #21211C; /* outer MTG card frame */
     border-radius: 2rem;
     padding: 6px; /* space between outer and inner */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     position: relative;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.2s ease;
+    will-change : transform;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
     aspect-ratio: 2 / 3; 
     overflow: visible;
 }

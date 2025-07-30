@@ -159,13 +159,13 @@
                 const centerX = rect.width / 2;
                 const centerY = rect.height / 2;
 
-                const rotate = -(y - centerY) / 15;
-                const rotateY = (x - centerX) / 15;
+                const offsetX = (x - centerX) / 10;
+                const offsety = (y - centerY) / 10;
 
-                card.style.transform = `rotateX(${rotate}deg) rotateY(${rotateY}deg)`;
+                card.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(1.03)`;
             });
             card.addEventListener('mouseleave', () => {
-                card.style.transform = 'rotateX(0deg) rotateY(0deg)';
+                card.style.transform = 'translate(0, 0) scale(1)';
             });
         });
     </script>
